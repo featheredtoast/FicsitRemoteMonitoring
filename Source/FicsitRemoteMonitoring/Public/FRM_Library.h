@@ -42,4 +42,6 @@ public:
 	}
 
 	static TSharedPtr<FJsonValue> ConvertStringToFJsonValue(const FString& JsonString);
+	static TSharedPtr<FJsonObject> getPowerConsumptionJSON(UFGPowerInfoComponent* powerInfo);
+	static TSharedPtr<FJsonObject> getPowerConsumptionJSON(UFGPowerInfoComponent* powerInfo, float modifier);
 };
